@@ -1,0 +1,465 @@
+/* CONTINUA OS IMPORTS ORIGINAIS... */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Anton', sans-serif;
+    color: #222;
+}
+
+ul {
+    list-style: none;
+}
+
+li,
+button,
+a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+/* CABEÇALHO */
+.cabecalho-texto-ul,
+.logo-pai-ul,
+.cabecalho-login-lupa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho-texto-ul {
+    gap: 30px;
+    padding: 20px 40px;
+    background: #ffffff;
+    color: white;
+}
+
+.logo-pai-ul {
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.logo-cabecalho-img {
+    width: 120px;
+}
+
+.cabecalho-login-lupa {
+    position: absolute;
+    right: 40px;
+    gap: 20px;
+}
+
+.assets-cabecalho-img {
+    width: 24px;
+}
+
+/* HERO SECTION */
+.section-principal-abaixo-do-header {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.img-principal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-encima-da-img-divPai {
+    position: absolute;
+    bottom: 120px;
+    left: 60px;
+    max-width: 600px;
+    color: white;
+}
+
+.titulo-endima-da-foto-h1 {
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.paragrafo-encima-da-foto-p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #f0f0f0;
+}
+
+.container-direito-imgMain {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    display: flex;
+    gap: 20px;
+}
+
+.link-img-main {
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.link-img-main:hover {
+    background-color: white;
+    color: black;
+}
+
+/* PRODUTOS DESTAQUES */
+.produtos-destaques-pai-section {
+    padding: 80px 40px;
+    background-color: #fafafa;
+}
+
+.alinhar-produtos-grid-pai {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+.produtos-destaques-container {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.produtos-destaques-container-3 {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.produtos-destaques-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.titulo-produto {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.desc-do-produto-destaque-p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+.preco-produto-destaque-p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #000;
+    margin-top: 5px;
+}
+
+.link-produtos-destaque-pai {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.link-produtos-destaque {
+    padding: 10px 20px;
+    border: 1px solid #999;
+    color: #999;
+    transition: 0.3s;
+}
+
+.link-produtos-destaque:hover {
+    color: black;
+    border-color: black;
+}
+
+/* SEGUNDA MAIN */
+.main-2-abaixo-de-produtosDestaques-main {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin-top: 80px;
+    margin-bottom: 10%;
+}
+
+.img-main-2 {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.main2-texto-pai {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    color: white;
+}
+
+.main2-titulo-h1 {
+    font-size: 36px;
+    font-weight: 100;
+    font-family: 'Anton', sans-serif;
+}
+
+.subtitulo-main2-p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* PRODUTOS ADIDAS */
+.produtos-adidas-pai-section {
+    padding: 80px 40px;
+    background-color: #f4f4f4;
+}
+
+.produtos-adidas-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.produtos-adidas-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* SEÇÃO DIVIDIDA */
+.main-dividida-abaixo-de-produtosDestaques {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.container-esquerdo,
+.container-direito {
+    flex: 1 1 50%;
+    position: relative;
+}
+
+.img-main-dividida {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.link-img-divida {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+.footer {
+    background-color: #f3f3f3;
+    padding: 40px 60px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.container-footer {
+    flex: 1 1 300px;
+}
+
+.container-footer h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.container-footer a {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+.container-footer-input {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.container-footer input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+.container-footer button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container-footer .terms {
+    font-size: 12px;
+    color: #555;
+}
+
+.footer-links {
+    flex: 2 1 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-links a {
+    display: block;
+    color: #333;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    font-size: 13px;
+    ;
+}
+
+.footer-selects {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-selects select {
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+
+
+#menuMobile {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+
+.menu-mobile-btn {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #000;
+}
+
+
+@media (max-width: 768px) {
+    .menu-mobile-btn {
+        display: block;
+    }
+
+    #menuMobile {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #111111cf;
+        backdrop-filter: blur(5px);
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    #menuMobile.active {
+        display: flex;
+    }
+
+    #menuMobile li {
+        color: white;
+        padding: 15px 20px;
+        text-align: left;
+        border-bottom: 1px solid #444;
+    }
+}
+
+/* RESPONSIVIDADEEEE */
+
+@media (max-width: 490px) {
+    .texto-encima-da-img-divPai {
+        position: absolute;
+        top: 52%;
+        right: -54px;
+        max-width: 400px;
+        color: #fff;
+    }
+
+    .main2-texto-pai {
+        position: absolute;
+        bottom: 80px;
+        left: 10px;
+        color: white;
+    }
+
+    .main2-titulo-h1 {
+        font-size: 26px;
+        font-weight: 100;
+    }
+
+    .subtitulo-main2-p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .logo-pai-ul {
+        justify-content: center;
+        margin: 20px 0;
+        width: 100%;
+        margin-right: 20%;
+    }
+
+
+    .logo-cabecalho-img {
+        width: 80px;
+    }
+
+
+    .main-dividida-abaixo-de-produtosDestaques {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        flex-direction: column;
+    }
+}

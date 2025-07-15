@@ -128,7 +128,7 @@ a {
 
 .alinhar-produtos-grid-pai {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     justify-items: center;
 }
@@ -418,6 +418,17 @@ a {
 /* RESPONSIVIDADEEEE */
 
 @media (max-width: 490px) {
+
+
+    .alinhar-produtos-grid-pai {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+
+
     .texto-encima-da-img-divPai {
         position: absolute;
         top: 52%;

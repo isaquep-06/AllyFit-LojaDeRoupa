@@ -9,6 +9,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+a {
+    transition: .5s ease-in-out;
+    font-family: system-ui;
+    font-weight: 200;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
 
 body {
     background-color: #fff;
@@ -29,15 +39,32 @@ a {
 }
 
 /* CABEÇALHO */
+
+header {
+    box-shadow: 2px 2px 2px 2px #cfcfcf25;
+    position: fixed;
+    z-index: 1000000;
+    width: 100%;
+}
+
 .cabecalho-texto-ul,
 .logo-pai-ul,
-.cabecalho-login-lupa {
+.cabecalho-login-lupa, .cabecalho-texto-ul2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .cabecalho-texto-ul {
+    gap: 30px;
+    padding: 20px 40px;
+    background: #ffffff;
+    color: white;
+}
+
+.cabecalho-texto-ul2 {
+    position: relative;
+    right: 16%;
     gap: 30px;
     padding: 20px 40px;
     background: #ffffff;
@@ -76,6 +103,8 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: fixed;
+    z-index: -1000;
 }
 
 .texto-encima-da-img-divPai {
@@ -112,12 +141,13 @@ a {
     border: 1px solid white;
     color: white;
     font-weight: 400;
-    transition: 0.3s;
+    transition: 0.7s;
 }
 
 .link-img-main:hover {
     background-color: white;
     color: black;
+        transform: rotate3d(-120, -100, 111, 360deg);
 }
 
 /* PRODUTOS DESTAQUES */

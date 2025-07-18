@@ -1,5 +1,0 @@
-﻿# AllyFit-LojaDeRoupa
-
-
-
-link do projeto https://isaquep-06.github.io/AllyFit-LojaDeRoupa/

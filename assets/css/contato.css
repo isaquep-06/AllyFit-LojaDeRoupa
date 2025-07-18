@@ -160,7 +160,7 @@ main img {
 .container-esquerdo {
     display: flex;
     flex-direction: column;
-    background: url(./../../public/images/rm222-mind-24.jpg);
+    background: url(../../images/rm222-mind-24.jpg);
     background-size: 115%;
     background-repeat: no-repeat;
     height: 70%;
@@ -168,7 +168,7 @@ main img {
     padding: 10px 20px;
     border-radius: 10px 0 0 10px;
 }
-
+ 
 .titulo-info-pai {
     width: 50%;
 }

@@ -56,7 +56,7 @@ header {
 }
 
 .cabecalho-texto-ul li::before {
-    content: url(./../img-assets/casa.png);
+    content: url(../img-assets/casa.png);
     position: relative;
     top: 4px;
 }
@@ -89,7 +89,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(./../../public/images/fundo-cadastro.jpg);
+    background: url(../../images/fundo-cadastro.jpg);
     background-size: cover;
 }
 
